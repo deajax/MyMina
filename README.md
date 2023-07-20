@@ -145,10 +145,10 @@ module.exports = {
       cleanStaleWebpackAssets: false,
     }),
     new CopyWebpackPlugin([
-      {
-        from: '**/*',
-        to: './',
-      },
+      patterns: [{
+				from: '**/*',
+				to: './',
+			}],
     ]),
   ],
   mode: 'none',
